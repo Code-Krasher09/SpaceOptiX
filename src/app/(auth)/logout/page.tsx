@@ -61,7 +61,7 @@ export default function LogoutPage() {
       <button
         type="button"
         onClick={handleLogout}
-        className="relative w-full rounded-xl bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-500 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/25 transition-all duration-200 hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-500/30 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-60"
+        className="relative w-full rounded-xl bg-linear-to-r from-blue-600 via-blue-500 to-indigo-500 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/25 transition-all duration-200 hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-500/30 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-60"
         disabled={status === "loading"}
       >
         <span className={status === "loading" ? "opacity-0" : "opacity-100"}>

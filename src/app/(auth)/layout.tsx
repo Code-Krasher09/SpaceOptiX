@@ -10,7 +10,7 @@ export default function AuthLayout({
   return (
     <div className="relative min-h-screen overflow-hidden bg-slate-950 text-slate-100">
       <div className="pointer-events-none absolute inset-0 opacity-[0.02]">
-        <div className="h-full w-full bg-[linear-gradient(rgba(148,163,184,0.35)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.35)_1px,transparent_1px)] bg-[size:48px_48px]" />
+        <div className="h-full w-full bg-[linear-gradient(rgba(148,163,184,0.35)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.35)_1px,transparent_1px)] bg-size-[48px_48px]" />
       </div>
       <div className="pointer-events-none absolute -top-24 left-10 h-64 w-64 rounded-full bg-blue-500/20 blur-[120px] animate-pulse" />
       <div
@@ -24,11 +24,11 @@ export default function AuthLayout({
 
       <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6">
         <Link href="/" className="flex items-center gap-3">
-          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500/30 via-cyan-500/20 to-indigo-500/30 text-blue-200">
+          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-linear-to-br from-blue-500/30 via-cyan-500/20 to-indigo-500/30 text-blue-200">
             <Building2 className="h-5 w-5" />
           </span>
           <span className="text-lg font-semibold tracking-tight">
-            <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-blue-400 via-cyan-400 to-indigo-400 bg-clip-text text-transparent">
               SpaceOptiX
             </span>
           </span>
