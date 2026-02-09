@@ -24,9 +24,9 @@ const UserSchema = new Schema(
     },
     role: {
       type: String,
-      enum: ["Root", "SystemAdmin", "User", "Guest"],
+      enum: ["ROOT", "SYSTEM_ADMIN", "USER", "GUEST"],
       required: true,
-      default: "User",
+      default: "USER",
     },
     department: { type: String, required: true, trim: true },
   },
